@@ -64,6 +64,8 @@ section{position:relative}
 .ba .lay{position:absolute;inset:0;background-repeat:no-repeat;background-size:200% auto}
 .ba .lay.b{background-position:0 var(--y,50%)}
 .ba .lay.a{background-position:100% var(--y,50%);clip-path:inset(0 0 0 50%)}
+.ba[data-flip] .lay.b{background-position:100% var(--y,50%)}
+.ba[data-flip] .lay.a{background-position:0 var(--y,50%)}
 .ba .bar{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;transform:translateX(-1px);pointer-events:none}
 .ba .bar i{position:absolute;top:50%;left:50%;width:56px;height:56px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);display:grid;place-items:center;font-style:normal;color:var(--wine);font-size:18px;box-shadow:0 8px 24px #0003}
 .ba .l{position:absolute;bottom:18px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:#0006;backdrop-filter:blur(6px);padding:7px 12px;border-radius:99px;pointer-events:none}
@@ -327,7 +329,7 @@ h2,.hero h1,.row h4{overflow-wrap:break-word}
   </div>
   <div class="archwrap rv d2">
     <svg class="seal" viewBox="0 0 132 132" aria-hidden="true"><defs><path id="c" d="M66,66 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0"/></defs><text><textPath href="#c">без эффекта татуажа · естественно ·</textPath></text></svg>
-    <div class="ba" data-img="img/src05.jpg" data-y="60%"><div class="lay b"></div><div class="lay a"></div><span class="l" style="left:18px">до</span><span class="l" style="right:18px">после</span><div class="bar"><i>⟷</i></div></div>
+    <div class="ba" data-img="img/src05.jpg" data-flip data-y="60%"><div class="lay b"></div><div class="lay a"></div><span class="l" style="left:18px">до</span><span class="l" style="right:18px">после</span><div class="bar"><i>⟷</i></div></div>
     <div class="cap">Потяните — камуфляж рубца на голени</div>
   </div>
 </section>
@@ -368,7 +370,7 @@ h2,.hero h1,.row h4{overflow-wrap:break-word}
     <div class="bas">
       <div class="it rv"><div class="ba" data-img="img/src04.jpg"><div class="lay b"></div><div class="lay a"></div><span class="l" style="left:14px">до</span><span class="l" style="right:14px">после</span><div class="bar"><i>⟷</i></div></div><h3>Камуфляж витилиго</h3><p>Пигмент подобран в тон коже — светлые пятна уходят из виду.</p></div>
       <div class="it rv d1"><div class="ba" data-img="img/src13.jpg" data-y="30%"><div class="lay b"></div><div class="lay a"></div><span class="l" style="left:14px">до</span><span class="l" style="right:14px">после</span><div class="bar"><i>⟷</i></div></div><h3>SMP — трихопигментация</h3><p>Эффект густой короткой стрижки и ровной линии роста волос.</p></div>
-      <div class="it rv d2"><div class="ba" data-img="img/src05.jpg" data-y="40%"><div class="lay b"></div><div class="lay a"></div><span class="l" style="left:14px">до</span><span class="l" style="right:14px">после</span><div class="bar"><i>⟷</i></div></div><h3>Камуфляж шрамов</h3><p>Выравниваю тон рубца с кожей — он перестаёт притягивать взгляд.</p></div>
+      <div class="it rv d2"><div class="ba" data-img="img/src05.jpg" data-flip data-y="40%"><div class="lay b"></div><div class="lay a"></div><span class="l" style="left:14px">до</span><span class="l" style="right:14px">после</span><div class="bar"><i>⟷</i></div></div><h3>Камуфляж шрамов</h3><p>Выравниваю тон рубца с кожей — он перестаёт притягивать взгляд.</p></div>
     </div>
   </div>
 </section>
@@ -525,6 +527,7 @@ if(touch){document.getElementById('hint').textContent='Нажмите на фо�
 // reveal
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+requestAnimationFrame(()=>document.querySelectorAll('.hero .rv').forEach(el=>el.classList.add('in')));
 
 // marquee
 const words=['Брови','Губы','Межресничка','Камуфляж шрамов','Витилиго','SMP головы','Ареолы','Перекрытие старого перманента'];
