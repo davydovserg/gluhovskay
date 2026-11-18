@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Татьяна Глуховская — перманент, камуфляж шрамов, SMP · Крылатское</title>
+<meta name="description" content="Перманентный макияж без эффекта татуажа, камуфляж шрамов и витилиго, SMP головы. Студия Татьяны Глуховской, Рублёвское шоссе 40. Более 10 000 процедур, 5,0 на Яндекс Картах.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3ECE3;--paper:#FBF7F2;--ink:#2A1A17;--wine:#8E1F2F;--wine2:#6f1523;--muted:#7a6560;--line:#2A1A171f;--dark:#1c1110;--blush:#e8c9c4;--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.55 'Inter Tight',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.serif{font-family:'Prata',serif;font-weight:400}
+.wrap{width:min(1280px,100% - 10vw);margin:0 auto}
+.kick{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--wine);display:flex;gap:12px;align-items:center;margin-bottom:22px}
+.kick:before{content:"";width:34px;height:1px;background:currentColor}
+h2{font-family:'Prata';font-weight:400;font-size:clamp(34px,4.6vw,68px);line-height:1.03;letter-spacing:-.02em}
+h2 em{font-style:normal;color:var(--wine)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:18px 28px;border-radius:99px;background:var(--wine);color:#fff;font-weight:500;text-decoration:none;font-size:15px;border:0;cursor:pointer;font-family:inherit;transition:background .3s,transform .3s}
+.btn:hover{background:var(--wine2);transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--ink);border:1px solid #2A1A1740}
+.btn.o:hover{background:var(--ink);color:#fff}
+.btn.w{background:#fff;color:var(--wine)}
+section{position:relative}
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:40;transition:background .4s,box-shadow .4s,padding .4s;padding:20px 0}
+.nav.s{background:#F3ECE3e6;backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line);padding:12px 0}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:'Prata';font-size:20px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{font-style:normal;width:38px;height:38px;border-radius:50%;border:1px solid var(--wine);display:grid;place-items:center;font-size:14px;color:var(--wine);letter-spacing:-.05em}
+.nav ul{display:flex;gap:30px;list-style:none;font-size:14px}
+.nav ul a{text-decoration:none;opacity:.75;transition:opacity .2s}
+.nav ul a:hover{opacity:1}
+.nav .r{display:flex;align-items:center;gap:18px;font-size:14px}
+.nav .r a.tel{text-decoration:none;white-space:nowrap}
+.nav .btn{padding:12px 20px;font-size:14px}
+
+/* hero */
+.hero{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;gap:4vw;align-items:center;padding:120px 5vw 60px;max-width:1440px;margin:0 auto}
+.hero h1{font-family:'Prata';font-weight:400;font-size:clamp(44px,6vw,98px);line-height:1;letter-spacing:-.025em}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
+.hero h1 .w span{display:inline-block;transform:translateY(105%);animation:up 1.1s cubic-bezier(.2,.7,.1,1) forwards}
+@keyframes up{to{transform:none}}
+.hero h1 em{font-style:normal;color:var(--wine);position:relative}
+.hero h1 em:after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.06em;background:var(--wine);transform:scaleX(0);transform-origin:left;animation:ln 1.2s 1.3s forwards cubic-bezier(.7,0,.2,1)}
+@keyframes ln{to{transform:scaleX(1)}}
+.hero .lead{max-width:480px;margin:30px 0 38px;font-size:19px;color:#5a4741}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:clamp(20px,3.4vw,52px);margin-top:56px;padding-top:26px;border-top:1px solid var(--line)}
+.stats b{font-family:'Prata';font-weight:400;font-size:clamp(26px,2.6vw,38px);display:block;white-space:nowrap;line-height:1.1}
+.stats span{font-size:13px;color:var(--muted)}
+.stats .star{color:var(--wine);font-size:.7em;vertical-align:.2em}
+.archwrap{position:relative}
+.ba{position:relative;overflow:hidden;cursor:ew-resize;user-select:none;touch-action:pan-y}
+.ba .lay{position:absolute;inset:0;background-repeat:no-repeat;background-size:200% auto}
+.ba .lay.b{background-position:0 var(--y,50%)}
+.ba .lay.a{background-position:100% var(--y,50%);clip-path:inset(0 0 0 50%)}
+.ba .bar{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;transform:translateX(-1px);pointer-events:none}
+.ba .bar i{position:absolute;top:50%;left:50%;width:56px;height:56px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);display:grid;place-items:center;font-style:normal;color:var(--wine);font-size:18px;box-shadow:0 8px 24px #0003}
+.ba .l{position:absolute;bottom:18px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:#0006;backdrop-filter:blur(6px);padding:7px 12px;border-radius:99px;pointer-events:none}
+.hero .ba{aspect-ratio:4/5;border-radius:999px 999px var(--r) var(--r);box-shadow:0 50px 90px -50px #5a1a20aa}
+.hero .seal{position:absolute;left:-46px;top:16%;width:132px;height:132px;animation:spin 22s linear infinite;z-index:2}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero .seal text{font:500 10.5px 'Inter Tight';letter-spacing:.24em;fill:var(--wine);text-transform:uppercase}
+.hero .cap{font-size:13px;color:var(--muted);margin-top:14px;text-align:center}
+
+/* marquee */
+.mq{background:var(--wine);color:#fff;overflow:hidden;padding:20px 0;transform:rotate(-1.2deg);margin:20px -2vw 0}
+.mq .t{display:flex;gap:46px;width:max-content;animation:mq 34s linear infinite;font-family:'Prata';font-size:clamp(20px,2.2vw,30px);white-space:nowrap}
+.mq .t span:nth-child(even){color:var(--blush)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* why */
+.why{padding:150px 0 120px}
+.why .g{display:grid;grid-template-columns:.9fr 1.1fr;gap:6vw;align-items:start}
+.why .st{position:sticky;top:110px}
+.why .st p{color:var(--muted);margin:24px 0 0;max-width:420px}
+.why .ph{margin-top:40px;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3.4}
+.why .ph img{width:100%;height:100%;object-fit:cover}
+.pr{border-top:1px solid var(--line)}
+.pr li{list-style:none;display:grid;grid-template-columns:70px 1fr;gap:20px;padding:34px 0;border-bottom:1px solid var(--line)}
+.pr li b{font-family:'Prata';font-weight:400;font-size:15px;color:var(--wine);padding-top:8px}
+.pr h3{font-family:'Prata';font-weight:400;font-size:clamp(24px,2.3vw,32px);line-height:1.15;margin-bottom:10px}
+.pr p{color:var(--muted)}
+
+/* works */
+.works{padding:120px 0;background:var(--dark);color:#f3e7e1}
+.works .kick{color:var(--blush)}
+.works h2 em{color:var(--blush)}
+.works .hd{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:56px}
+.works .hd p{max-width:380px;color:#cbb8b2}
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.gal figure{position:relative;border-radius:18px;overflow:hidden;cursor:none;background:#2a1b19}
+.gal figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.gal figure:hover img{transform:scale(1.03)}
+.gal figcaption{position:absolute;left:16px;bottom:14px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;background:#0007;backdrop-filter:blur(6px);padding:7px 12px;border-radius:99px;pointer-events:none}
+.gal .g1{grid-column:span 5;aspect-ratio:3/4}
+.gal .g2{grid-column:span 7;aspect-ratio:7/5.2}
+.gal .g3{grid-column:span 4;aspect-ratio:3/4}
+.gal .g4{grid-column:span 4;aspect-ratio:3/4}
+.gal .g5{grid-column:span 4;aspect-ratio:3/4}
+.lens{position:fixed;width:210px;height:210px;border-radius:50%;pointer-events:none;z-index:60;border:2px solid #fff;box-shadow:0 20px 50px #0008;background-repeat:no-repeat;opacity:0;transform:translate(-50%,-50%) scale(.6);transition:opacity .25s,transform .25s}
+.lens.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.lens:after{content:"×3";position:absolute;right:18px;bottom:18px;font-size:11px;color:#fff;background:#0007;padding:3px 7px;border-radius:99px}
+.hint{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:#cbb8b2;margin-top:18px}
+.hint:before{content:"";width:18px;height:18px;border-radius:50%;border:1.5px solid currentColor}
+
+.bas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:80px}
+.bas .it h3{font-family:'Prata';font-weight:400;font-size:24px;margin:18px 0 6px}
+.bas .it p{color:#cbb8b2;font-size:15px}
+.bas .ba{aspect-ratio:4/4.6;border-radius:18px}
+
+/* services */
+.svc{padding:140px 0 120px}
+.svc .hd{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:end;margin-bottom:50px}
+.svc .hd p{color:var(--muted);max-width:440px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tabs button{font:500 15px 'Inter Tight';padding:13px 22px;border-radius:99px;border:1px solid var(--line);background:transparent;cursor:pointer;color:var(--ink);transition:.25s}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.rows{border-top:1px solid var(--ink)}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:30px;align-items:center;padding:28px 6px;border-bottom:1px solid var(--line);text-decoration:none;transition:padding .35s,background .35s;position:relative}
+.row:hover{padding-left:22px;background:var(--paper)}
+.row h4{font-family:'Prata';font-weight:400;font-size:clamp(21px,2vw,28px);line-height:1.2}
+.row p{font-size:14px;color:var(--muted);margin-top:4px}
+.row .pz{font-weight:500;white-space:nowrap}
+.row .ar{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:.3s;color:var(--wine)}
+.row:hover .ar{background:var(--wine);color:#fff;border-color:var(--wine);transform:rotate(-45deg)}
+.peek{position:fixed;width:240px;height:300px;border-radius:16px;overflow:hidden;pointer-events:none;z-index:30;opacity:0;transform:translate(-50%,-50%) scale(.8) rotate(-4deg);transition:opacity .3s,transform .4s;box-shadow:0 30px 60px -20px #0006}
+.peek.on{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(-4deg)}
+.peek img{width:100%;height:100%;object-fit:cover}
+.svc .note{font-size:14px;color:var(--muted);margin-top:22px}
+
+/* about */
+.about{padding:40px 0 140px}
+.about .g{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center}
+.about .ph{position:relative}
+.about .ph img{border-radius:var(--r);width:100%;aspect-ratio:4/5;object-fit:cover;object-position:60% 50%}
+.about .ph .sm{position:absolute;right:-40px;bottom:-40px;width:44%;aspect-ratio:3/4;border:8px solid var(--bg);border-radius:var(--r);object-position:center}
+.about blockquote{font-family:'Prata';font-size:clamp(22px,2.2vw,30px);line-height:1.35;margin:26px 0;color:var(--ink)}
+.about blockquote{padding-left:22px;border-left:2px solid var(--wine)}
+.about p{color:var(--muted);margin-bottom:14px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+.facts div{background:var(--paper);border-radius:16px;padding:18px 20px;font-size:15px}
+.facts div b{display:block;font-family:'Prata';font-weight:400;font-size:24px;color:var(--wine)}
+
+/* steps */
+.steps{padding:120px 0;background:var(--paper)}
+.steps .list{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px;counter-reset:s}
+.steps .s{padding:30px 26px 34px;border-radius:var(--r);background:var(--bg);position:relative;overflow:hidden;transition:transform .4s}
+.steps .s:hover{transform:translateY(-6px)}
+.steps .s:before{counter-increment:s;content:"0" counter(s);font-family:'Prata';font-size:64px;line-height:1;color:var(--wine);opacity:.18;display:block;margin-bottom:26px}
+.steps .s h3{font-family:'Prata';font-weight:400;font-size:22px;margin-bottom:10px;line-height:1.2}
+.steps .s p{font-size:15px;color:var(--muted)}
+.steps .s.f{background:var(--wine);color:#fff}
+.steps .s.f p{color:#f3d6d3}
+.steps .s.f:before{color:#fff;opacity:.3}
+
+/* promo */
+.promo{padding:120px 0}
+.pbox{background:var(--wine);color:#fff;border-radius:32px;padding:clamp(36px,6vw,80px);display:grid;grid-template-columns:1.2fr .8fr;gap:5vw;align-items:center;position:relative;overflow:hidden}
+.pbox:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid #ffffff2a;right:-160px;top:-200px}
+.pbox:after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;border:1px solid #ffffff22;right:-60px;top:-110px}
+.pbox .kick{color:var(--blush)}
+.pbox h2{color:#fff}
+.pbox p{color:#f3d6d3;margin:22px 0 30px;max-width:520px}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;position:relative;z-index:1}
+.cd div{background:#ffffff14;border:1px solid #ffffff26;border-radius:16px;padding:18px 6px;text-align:center}
+.cd b{font-family:'Prata';font-weight:400;font-size:clamp(30px,3.4vw,48px);display:block;line-height:1}
+.cd span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#f3d6d3}
+.cdl{font-size:13px;color:#f3d6d3;margin-bottom:12px;position:relative;z-index:1}
+
+/* reviews */
+.rev{padding:40px 0 130px;overflow:hidden}
+.rev .hd{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.rating{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.rating b{font-family:'Prata';font-weight:400;font-size:64px;line-height:1}
+.rating .st{color:var(--wine);letter-spacing:.15em}
+.rating span{font-size:14px;color:var(--muted)}
+.rtrack{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:50px 5vw 20px;margin:0 -5vw;scrollbar-width:none}
+.rtrack::-webkit-scrollbar{display:none}
+.rc{flex:0 0 min(460px,84vw);scroll-snap-align:start;background:var(--paper);border-radius:var(--r);padding:34px;display:flex;flex-direction:column}
+.rc .q{font-family:'Prata';font-size:19px;line-height:1.5;flex:1}
+.rc .who{display:flex;justify-content:space-between;margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:14px}
+.rc .who span{color:var(--muted)}
+.rnav{display:flex;gap:10px}
+.rnav button{width:54px;height:54px;border-radius:50%;border:1px solid var(--line);background:none;cursor:pointer;font-size:18px;color:var(--ink);transition:.25s}
+.rnav button:hover{background:var(--ink);color:#fff}
+
+/* edu */
+.edu{padding:0 0 130px}
+.ebox{display:grid;grid-template-columns:.9fr 1.1fr;border-radius:32px;overflow:hidden;background:var(--dark);color:#f3e7e1}
+.ebox .ph{min-height:420px;background:url(img/src02.jpg) center/cover}
+.ebox .tx{padding:clamp(34px,5vw,70px)}
+.ebox .kick{color:var(--blush)}
+.ebox h2{font-size:clamp(30px,3.6vw,52px)}
+.ebox p{color:#cbb8b2;margin:20px 0 30px;max-width:460px}
+
+/* faq */
+.faq{padding:0 0 130px}
+.faq .g{display:grid;grid-template-columns:.8fr 1.2fr;gap:6vw}
+.faq details{border-bottom:1px solid var(--line);padding:26px 0}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;font-family:'Prata';font-size:clamp(19px,1.7vw,23px)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";color:var(--wine);font-size:26px;line-height:1;transition:transform .3s}
+.faq details[open] summary:after{transform:rotate(45deg)}
+.faq details p{color:var(--muted);margin-top:14px;max-width:640px}
+
+/* contact */
+.ct{padding:120px 0 0;background:var(--dark);color:#f3e7e1}
+.ct .g{display:grid;grid-template-columns:1fr 1fr;gap:5vw}
+.ct .kick{color:var(--blush)}
+.ct h2 em{color:var(--blush)}
+form.f{margin-top:36px;display:grid;gap:12px}
+.f input,.f select{width:100%;font:400 16px 'Inter Tight';padding:18px 20px;border-radius:14px;border:1px solid #ffffff24;background:#ffffff0d;color:#fff;outline:none;transition:border .2s}
+.f input:focus,.f select:focus{border-color:var(--blush)}
+.f input::placeholder{color:#b9a49e}
+.f select option{color:#000}
+.f .btn{justify-content:center;margin-top:6px}
+.f small{font-size:12px;color:#9c8781}
+.info{display:grid;gap:22px;align-content:start}
+.info .c{border-top:1px solid #ffffff1f;padding-top:18px}
+.info .c span{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#a99590}
+.info .c a,.info .c div{display:block;font-family:'Prata';font-size:clamp(20px,1.9vw,26px);text-decoration:none;margin-top:6px}
+.map{border-radius:var(--r);overflow:hidden;height:300px;margin-top:6px;filter:grayscale(.4) contrast(1.05)}
+.map iframe{width:100%;height:100%;border:0}
+footer{margin-top:100px;padding:30px 0 40px;border-top:1px solid #ffffff1a;font-size:13px;color:#9c8781;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.big{font-family:'Prata';font-size:clamp(60px,15vw,240px);line-height:.8;letter-spacing:-.04em;color:#ffffff0d;white-space:nowrap;margin-top:80px;user-select:none}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,40px);background:#fff;color:var(--ink);padding:16px 22px;border-radius:14px;box-shadow:0 20px 50px #0004;z-index:90;opacity:0;transition:.35s;font-size:15px;max-width:90vw}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.mbar{display:none}
+.lb{position:fixed;inset:0;z-index:95;background:#0d0807f2;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;overflow:auto;touch-action:pinch-zoom}
+.lb.on{opacity:1;pointer-events:auto}
+.lb img{max-width:100%;max-height:100%;object-fit:contain}
+.lb span{position:fixed;top:18px;right:18px;color:#fff;background:#ffffff22;padding:10px 16px;border-radius:99px;font-size:14px}
+
+@media(max-width:980px){
+ .nav ul,.nav .r a.tel{display:none}
+ .hero{grid-template-columns:1fr;padding-top:110px;gap:50px}
+ .archwrap{max-width:440px;width:100%;margin:0 auto}
+ .hero .seal{left:-20px;width:100px;height:100px}
+ .why .g,.svc .hd,.about .g,.faq .g,.ct .g,.pbox,.ebox{grid-template-columns:1fr}
+ .why .st{position:static}
+ .gal .g1,.gal .g2,.gal .g3,.gal .g4,.gal .g5{grid-column:span 6;aspect-ratio:3/4}
+ .gal .g2{grid-column:span 12;aspect-ratio:4/3}
+ .bas{grid-template-columns:1fr;max-width:480px}
+ .steps .list{grid-template-columns:1fr 1fr}
+ .about .ph .sm{right:-10px;bottom:-30px}
+ .row{grid-template-columns:1fr;gap:8px;padding:22px 4px}.row .ar{display:none}.row:hover{padding-left:4px}
+ .row .pz{color:var(--wine);font-size:15px}
+ .peek,.lens{display:none}
+ .gal figure{cursor:default}
+ .mbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;gap:8px;transform:translateY(130%);transition:transform .4s}
+ .mbar.on{transform:none}
+ .mbar a{flex:1;justify-content:center;padding:16px;box-shadow:0 14px 30px #0004}
+ .mbar a.o{flex:0 0 58px;background:#fff;border:0;padding:0}
+ footer{margin-bottom:70px}
+}
+@media(max-width:560px){
+ .stats{flex-wrap:wrap;gap:18px 26px}
+ .steps .list{grid-template-columns:1fr}
+ .hero .lead{font-size:17px}
+ .cd b{font-size:28px}
+}
+html,body{overflow-x:hidden;overflow-x:clip}
+.g>*,.hero>*,.pbox>*,.ebox>*,.svc .hd>*,.row>div{min-width:0}
+h2,.hero h1,.row h4{overflow-wrap:break-word}
+@media(max-width:560px){
+ .about .ph .sm{right:10px;bottom:-24px;border-width:6px}
+ .rc{padding:26px}
+ .rc .q{font-size:17px}
+ .pbox{border-radius:24px}
+ .tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-5vw;padding-right:5vw}
+ .tabs::-webkit-scrollbar{display:none}
+ .tabs button{white-space:nowrap;flex:0 0 auto}
+ .facts div b{font-size:20px}
+}
+@media(max-width:400px){
+ .kick{letter-spacing:.12em;font-size:11px;gap:8px}.kick:before{width:20px}
+ .logo{font-size:17px;gap:8px}.logo i{width:32px;height:32px;font-size:12px}
+ .nav .btn{padding:10px 14px;font-size:13px}
+ .hero .btn{width:100%;justify-content:center}
+ .cd{gap:6px}.cd div{padding:14px 2px}.cd span{font-size:10px;letter-spacing:.06em}
+ .gal{gap:10px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero h1 .w span{transform:none}.hero h1 em:after{transform:none}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top"><i>ТГ</i>Глуховская</a>
+    <ul>
+      <li><a href="#why">Подход</a></li>
+      <li><a href="#works">Работы</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#about">О Татьяне</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+    <div class="r"><a class="tel" href="tel:+79208846212">+7 920 884-62-12</a><a class="btn" href="#contacts">Записаться</a></div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div>
+    <div class="kick rv in">Крылатское · Рублёвское ш., 40</div>
+    <h1><span class="w"><span>Перманент,</span></span> <span class="w"><span style="animation-delay:.1s">который</span></span> <span class="w"><span style="animation-delay:.2s"><em>никто</em></span></span> <span class="w"><span style="animation-delay:.3s">не&nbsp;заметит</span></span></h1>
+    <p class="lead rv d2">Брови, губы, веки — без эффекта татуажа. И&nbsp;то, за&nbsp;что берутся единицы: камуфляж шрамов, витилиго и&nbsp;SMP головы.</p>
+    <div class="cta rv d3"><a class="btn" href="#contacts">Бесплатная консультация и эскиз</a><a class="btn o" href="#works">Смотреть работы</a></div>
+    <div class="stats rv d3">
+      <div><b data-count="10000">10 000</b><span>процедур</span></div>
+      <div><b>5,0 <span class="star">★</span></b><span>115 отзывов на Картах</span></div>
+      <div><b>2+ года</b><span>держится результат</span></div>
+    </div>
+  </div>
+  <div class="archwrap rv d2">
+    <svg class="seal" viewBox="0 0 132 132" aria-hidden="true"><defs><path id="c" d="M66,66 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0"/></defs><text><textPath href="#c">без эффекта татуажа · естественно ·</textPath></text></svg>
+    <div class="ba" data-img="img/src05.jpg" data-y="60%"><div class="lay b"></div><div class="lay a"></div><span class="l" style="left:18px">до</span><span class="l" style="right:18px">после</span><div class="bar"><i>⟷</i></div></div>
+    <div class="cap">Потяните — камуфляж рубца на голени</div>
+  </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div class="t" id="mq"></div></div>
+
+<section class="why" id="why">
+  <div class="wrap g">
+    <div class="st">
+      <div class="kick rv">Подход</div>
+      <h2 class="rv">Почему никто не замечает <em>мой</em> перманент?</h2>
+      <p class="rv d1">Хороший перманент не видно — видно ухоженное лицо. Поэтому я не рисую новое лицо, а возвращаю ваше: чуть ярче, чётче и свежее.</p>
+      <div class="ph rv d2"><img src="img/src09.jpg" alt="Естественные брови — перманент Татьяны Глуховской" loading="lazy"></div>
+    </div>
+    <ol class="pr">
+      <li class="rv"><b>01</b><div><h3>Не рисую шаблонные брови</h3><p>Никаких «одинаковых» форм из каталога. Форму строю по вашим чертам и мимике и сначала рисую эскиз, который вы видите и утверждаете.</p></div></li>
+      <li class="rv"><b>02</b><div><h3>Подчёркиваю природную форму</h3><p>Работаю с тем, что дала природа: заполняю пробелы, выравниваю асимметрию, добавляю плотность там, где её не хватает.</p></div></li>
+      <li class="rv"><b>03</b><div><h3>Подбираю оттенок индивидуально</h3><p>Цвет смешиваю под тон кожи, волос и подтон. Работаю на премиальных пигментах, поэтому со временем они не уходят в синеву и рыжину.</p></div></li>
+      <li class="rv"><b>04</b><div><h3>Стерильно и спокойно</h3><p>Одноразовые расходники, стерильные инструменты, без суеты и спешки. Клиентки часто пишут: «не страшно и не больно».</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="hd">
+      <div><div class="kick rv">Работы</div><h2 class="rv">Посмотрите <em>вблизи</em></h2></div>
+      <div><p class="rv d1">Макросъёмка без ретуши. Видно каждый волосок и мягкую растушёвку — рассмотрите сами.</p><span class="hint rv d2" id="hint">Наведите курсор на фото</span></div>
+    </div>
+    <div class="gal">
+      <figure class="g1 rv"><img src="img/src11.jpg" alt="Брови, волосковая техника" loading="lazy"><figcaption>Брови</figcaption></figure>
+      <figure class="g2 rv d1"><img src="img/src08.jpg" alt="Стрелка и брови" loading="lazy"><figcaption>Веки · стрелка</figcaption></figure>
+      <figure class="g3 rv"><img src="img/src10.jpg" alt="Акварельные губы" loading="lazy"><figcaption>Губы · акварель</figcaption></figure>
+      <figure class="g4 rv d1"><img src="img/src07.jpg" alt="Перманент губ" loading="lazy"><figcaption>Губы</figcaption></figure>
+      <figure class="g5 rv d2"><img src="img/src09.jpg" alt="Брови в естественном цвете" loading="lazy"><figcaption>Брови</figcaption></figure>
+    </div>
+
+    <div class="bas">
+      <div class="it rv"><div class="ba" data-img="img/src04.jpg"><div class="lay b"></div><div class="lay a"></div><span class="l" style="left:14px">до</span><span class="l" style="right:14px">после</span><div class="bar"><i>⟷</i></div></div><h3>Камуфляж витилиго</h3><p>Пигмент подобран в тон коже — светлые пятна уходят из виду.</p></div>
+      <div class="it rv d1"><div class="ba" data-img="img/src13.jpg" data-y="30%"><div class="lay b"></div><div class="lay a"></div><span class="l" style="left:14px">до</span><span class="l" style="right:14px">после</span><div class="bar"><i>⟷</i></div></div><h3>SMP — трихопигментация</h3><p>Эффект густой короткой стрижки и ровной линии роста волос.</p></div>
+      <div class="it rv d2"><div class="ba" data-img="img/src05.jpg" data-y="40%"><div class="lay b"></div><div class="lay a"></div><span class="l" style="left:14px">до</span><span class="l" style="right:14px">после</span><div class="bar"><i>⟷</i></div></div><h3>Камуфляж шрамов</h3><p>Выравниваю тон рубца с кожей — он перестаёт притягивать взгляд.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc" id="services">
+  <div class="wrap">
+    <div class="hd">
+      <div><div class="kick rv">Услуги и цены</div><h2 class="rv">От лёгкого акцента до&nbsp;<em>сложных случаев</em></h2></div>
+      <p class="rv d1">Сложные случаи — перекрытие старого перманента, рубцы, витилиго — оцениваю на консультации: цена зависит от площади и состояния кожи. Консультация и эскиз сейчас бесплатно.</p>
+    </div>
+    <div class="tabs rv" id="tabs"></div>
+    <div class="rows" id="rows"></div>
+    <p class="note" id="note">Наведите на услугу — покажу пример работы.</p>
+  </div>
+</section>
+<div class="peek" id="peek"><img alt=""></div>
+
+<section class="about" id="about">
+  <div class="wrap g">
+    <div class="ph rv"><img src="img/src12.jpg" alt="Татьяна Глуховская в студии" loading="lazy"><img class="sm" src="img/src03.jpg" alt="SMP — процесс" loading="lazy"></div>
+    <div>
+      <div class="kick rv">О мастере</div>
+      <h2 class="rv">Татьяна <em>Глуховская</em></h2>
+      <blockquote class="rv d1">Лицо должно остаться вашим. Просто проснуться утром — и уже быть собой, только ярче.</blockquote>
+      <p class="rv d1">Больше 10&nbsp;000 процедур. Делаю брови, губы и веки, а ещё работаю там, где обычный перманент бессилен: перекрываю неудачные старые работы, маскирую шрамы, растяжки, витилиго, восстанавливаю ареолы и делаю SMP головы.</p>
+      <p class="rv d2">Учу мастеров — и сама продолжаю учиться.</p>
+      <div class="facts rv d2">
+        <div><b>10 000+</b>процедур</div>
+        <div><b>5,0</b>115 отзывов</div>
+        <div><b>Премиум</b>пигменты</div>
+        <div><b>Бесплатно</b>парковка у студии</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+    <div class="kick rv">Как всё проходит</div>
+    <h2 class="rv">Четыре шага — <em>и&nbsp;никаких</em> сюрпризов</h2>
+    <div class="list">
+      <div class="s rv"><h3>Консультация и эскиз</h3><p>Обсуждаем, чего вы хотите, рисую форму прямо на лице. Сейчас — бесплатно.</p></div>
+      <div class="s rv d1"><h3>Подбор пигмента</h3><p>Смешиваю оттенок под вашу кожу и волосы. Вы видите цвет до начала.</p></div>
+      <div class="s rv d2"><h3>Процедура</h3><p>Стерильно, без спешки, в уютной студии. Подробно объясняю уход.</p></div>
+      <div class="s f rv d3"><h3>Коррекция</h3><p>После заживления довожу результат до идеала — чтобы держался долго.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="promo">
+  <div class="wrap">
+    <div class="pbox rv">
+      <div>
+        <div class="kick">Красота без сомнений</div>
+        <h2>Консультация и эскиз — <em style="color:var(--blush)">в&nbsp;подарок</em></h2>
+        <p>Камуфляж шрамов, SMP или перманентный макияж: подберу форму, нарисую эскиз и честно скажу, что получится. Бесплатно до 31 декабря 2026.</p>
+        <a class="btn w" href="#contacts">Забрать подарок</a>
+      </div>
+      <div>
+        <div class="cdl">До конца акции осталось</div>
+        <div class="cd" id="cd"><div><b>0</b><span>дней</span></div><div><b>0</b><span>часов</span></div><div><b>0</b><span>минут</span></div><div><b>0</b><span>секунд</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="reviews">
+  <div class="wrap">
+    <div class="hd">
+      <div><div class="kick rv">Отзывы</div><h2 class="rv">«Только к&nbsp;<em>Татьяне</em>»</h2></div>
+      <div class="rating rv d1"><b>5,0</b><div><div class="st">★★★★★</div><span>115 отзывов на Яндекс Картах</span></div><div class="rnav"><button aria-label="Назад" data-d="-1">←</button><button aria-label="Вперёд" data-d="1">→</button></div></div>
+    </div>
+    <div class="rtrack" id="rtrack">
+      <div class="rc"><div class="q">Скоро к вам вся моя семья и все подруги перейдут. После меня сходила мама, потом подруга, сестра специально приехала из другого города. Не страшно, не больно, без суеты — а самое главное, лицо остаётся своим, просто ухоженнее и ярче.</div><div class="who"><b>Людмила</b><span>8 ноября</span></div></div>
+      <div class="rc"><div class="q">Давно собиралась поправить сильно уставший перманент. Татьяна очень качественно и красиво перекрыла мой старый перманент. Даже с отёкшими глазами это выглядит восхитительно! Золотые ручки.</div><div class="who"><b>Ольга Б.</b><span>8 октября</span></div></div>
+      <div class="rc"><div class="q">Татьяна — настоящий профессионал: стерильно, аккуратно, с вниманием к деталям. Теперь каждое утро начинается без лишнего макияжа — это счастье!</div><div class="who"><b>Роман</b><span>28 октября</span></div></div>
+      <div class="rc"><div class="q">Очень рекомендую! Работает опытный профессионал. Атмосфера уютная и приятная. Предварительно получила квалифицированную консультацию по поводу нужной процедуры. Цены приемлемые.</div><div class="who"><b>Ольга К.</b><span>29 октября</span></div></div>
+    </div>
+    <a class="btn o rv" style="margin-top:20px" href="https://yandex.ru/maps/org/234177240970/reviews/" target="_blank" rel="noopener">Все 115 отзывов на Картах ↗</a>
+  </div>
+</section>
+
+<section class="edu" id="edu">
+  <div class="wrap">
+    <div class="ebox rv">
+      <div class="ph" role="img" aria-label="Обучение в студии"></div>
+      <div class="tx">
+        <div class="kick">Обучение мастеров</div>
+        <h2>Хотите делать так&nbsp;же?</h2>
+        <p>Учу перманентному макияжу на реальной практике в студии. Начните с пробного урока: поймёте, ваше ли это, и почувствуете машинку в руке.</p>
+        <a class="btn w" href="https://t.me/Gluhovskaya_permanent" target="_blank" rel="noopener">Записаться на пробный урок</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap g">
+    <div><div class="kick rv">Вопросы</div><h2 class="rv">Что обычно <em>спрашивают</em></h2></div>
+    <div class="rv d1">
+      <details open><summary>Будет видно, что это перманент?</summary><p>В этом и смысл моей работы: никакой «нарисованной» резкости. Форма по вашим чертам, оттенок под вашу кожу и волосы — со стороны это выглядит как ухоженное лицо, а не как татуаж.</p></details>
+      <details><summary>Сколько держится результат?</summary><p>Обычно естественный результат держится до двух лет и дольше. Срок зависит от типа кожи, зоны и ухода — на консультации скажу, чего ждать именно вам.</p></details>
+      <details><summary>Можно ли исправить старый перманент?</summary><p>Да, это одна из моих специализаций: перекрываю уставший или неудачный перманент, а если нужно, сначала удаляю его. Пришлите фото в Telegram, и я скажу, какой путь подойдёт.</p></details>
+      <details><summary>Работаете ли вы со шрамами и витилиго?</summary><p>Да: камуфляж рубцов и шрамов, растяжек, витилиго, восстановление ареол. Каждый случай смотрю лично — от площади и состояния кожи зависят план и стоимость.</p></details>
+      <details><summary>Это больно?</summary><p>Клиентки чаще всего пишут «не страшно и не больно». Работаю спокойно, без спешки и всё время слежу за вашим самочувствием.</p></details>
+      <details><summary>Где вы находитесь и есть ли парковка?</summary><p>Москва, Рублёвское шоссе, 40, корпус 3 — район Крылатское. У студии бесплатная парковка и Wi-Fi.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="ct" id="contacts">
+  <div class="wrap">
+    <div class="g">
+      <div>
+        <div class="kick rv">Запись</div>
+        <h2 class="rv">Начнём с <em>бесплатного</em> эскиза</h2>
+        <form class="f rv d1" id="form">
+          <input name="name" placeholder="Как вас зовут" required autocomplete="name">
+          <input name="phone" placeholder="Телефон" type="tel" required autocomplete="tel">
+          <select name="zone"><option>Брови</option><option>Губы</option><option>Веки</option><option>Камуфляж шрамов / растяжек</option><option>Витилиго</option><option>SMP головы</option><option>Исправить / удалить старый перманент</option><option>Обучение</option></select>
+          <button class="btn" type="submit">Записаться через Telegram</button>
+          <small>Откроется чат с Татьяной, текст заявки уже будет скопирован — просто вставьте его.</small>
+        </form>
+      </div>
+      <div class="info rv d2">
+        <div class="c"><span>Телефон</span><a href="tel:+79208846212">+7 920 884-62-12</a></div>
+        <div class="c"><span>Telegram · ВКонтакте</span><a href="https://t.me/Gluhovskaya_permanent" target="_blank" rel="noopener">@Gluhovskaya_permanent</a><a style="font-size:17px;font-family:'Inter Tight';margin-top:8px;color:#cbb8b2" href="https://vk.ru/gluhovskaya_permanent" target="_blank" rel="noopener">vk.ru/gluhovskaya_permanent ↗</a></div>
+        <div class="c"><span>Адрес</span><div>Москва, Рублёвское ш., 40, корп. 3</div></div>
+        <div class="map"><iframe src="https://yandex.ru/map-widget/v1/?ll=37.416002%2C55.750591&z=16&pt=37.416002%2C55.750591%2Cpm2rdl" loading="lazy" title="Студия на карте"></iframe></div>
+      </div>
+    </div>
+    <div class="big" aria-hidden="true">Глуховская</div>
+    <footer><span>© 2026 Студия Татьяны Глуховской · ИП Глуховская Т. В., ИНН 773168634020</span><span>Перманент · камуфляж · SMP · Крылатское</span></footer>
+  </div>
+</section>
+</main>
+
+<div class="mbar" id="mbar"><a class="btn" href="#contacts">Бесплатный эскиз</a><a class="btn o" href="tel:+79208846212" aria-label="Позвонить">☎</a></div>
+<div class="lens" id="lens"></div>
+<div class="lb" id="lb"><img alt=""><span>Закрыть ✕</span></div>
+<div class="toast" id="toast"></div>
+
+<script>
+// nav + mobile bar
+const nav=document.getElementById('nav'),mbar=document.getElementById('mbar');
+const ctEl=document.getElementById('contacts');
+addEventListener('scroll',()=>{nav.classList.toggle('s',scrollY>30);const ct=ctEl.getBoundingClientRect().top<innerHeight*.9;mbar.classList.toggle('on',scrollY>innerHeight*.8&&!ct)},{passive:true});
+const touch=matchMedia('(hover:none),(max-width:980px)').matches;
+if(touch){document.getElementById('hint').textContent='Нажмите на фото — откроется крупно';document.getElementById('note').style.display='none';
+ const lb=document.getElementById('lb'),li=lb.querySelector('img');
+ document.querySelectorAll('.gal figure').forEach(fg=>fg.addEventListener('click',()=>{li.src=fg.querySelector('img').src;lb.classList.add('on');document.body.style.overflow='hidden'}));
+ lb.addEventListener('click',()=>{lb.classList.remove('on');document.body.style.overflow=''});}
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// marquee
+const words=['Брови','Губы','Межресничка','Камуфляж шрамов','Витилиго','SMP головы','Ареолы','Перекрытие старого перманента'];
+document.getElementById('mq').innerHTML=[...words,...words].map(w=>`<span>${w}</span><span>✦</span>`).join('');
+
+// before/after sliders
+document.querySelectorAll('.ba').forEach(ba=>{
+  const img=ba.dataset.img;ba.style.setProperty('--y',ba.dataset.y||'50%');
+  ba.querySelectorAll('.lay').forEach(l=>l.style.backgroundImage=`url(${img})`);
+  const a=ba.querySelector('.lay.a'),bar=ba.querySelector('.bar');let drag=false;
+  const set=x=>{const r=ba.getBoundingClientRect();const p=Math.min(97,Math.max(3,(x-r.left)/r.width*100));a.style.clipPath=`inset(0 0 0 ${p}%)`;bar.style.left=p+'%'};
+  ba.addEventListener('pointerdown',e=>{drag=true;set(e.clientX)});
+  addEventListener('pointerup',()=>drag=false);
+  ba.addEventListener('pointermove',e=>{if(drag||e.pointerType==='mouse')set(e.clientX)});
+  ba.addEventListener('mouseleave',()=>{a.style.transition=bar.style.transition='.6s';set(ba.getBoundingClientRect().left+ba.offsetWidth/2);setTimeout(()=>a.style.transition=bar.style.transition='',600)});
+});
+// hero hint animation
+(()=>{const ba=document.querySelector('.hero .ba'),a=ba.querySelector('.lay.a'),bar=ba.querySelector('.bar');let t0=null;
+ const f=t=>{if(!t0)t0=t;const k=(t-t0)/2200;if(k>1){a.style.clipPath='inset(0 0 0 50%)';bar.style.left='50%';return}const p=50+Math.sin(k*Math.PI*2)*22;a.style.clipPath=`inset(0 0 0 ${p}%)`;bar.style.left=p+'%';requestAnimationFrame(f)};
+ setTimeout(()=>requestAnimationFrame(f),1600)})();
+
+// magnifier
+const lens=document.getElementById('lens'),Z=3;
+document.querySelectorAll('.gal figure').forEach(fg=>{
+  const im=fg.querySelector('img');
+  fg.addEventListener('mouseenter',()=>{lens.style.backgroundImage=`url(${im.src})`;lens.classList.add('on')});
+  fg.addEventListener('mouseleave',()=>lens.classList.remove('on'));
+  fg.addEventListener('mousemove',e=>{const r=im.getBoundingClientRect();
+    // object-fit cover mapping
+    const nw=im.naturalWidth,nh=im.naturalHeight,s=Math.max(r.width/nw,r.height/nh),dw=nw*s,dh=nh*s,ox=(r.width-dw)/2,oy=(r.height-dh)/2;
+    const x=e.clientX-r.left-ox,y=e.clientY-r.top-oy;
+    lens.style.left=e.clientX+'px';lens.style.top=e.clientY+'px';
+    lens.style.backgroundSize=`${dw*Z}px ${dh*Z}px`;lens.style.backgroundPosition=`${-x*Z+105}px ${-y*Z+105}px`});
+});
+
+// services
+const SV={
+ 'Перманент':[['Брови','Пудровое напыление и волосковая техника — форма по вашим чертам','по консультации','11'],['Коррекция перманента бровей','Обновление цвета и формы','12 000 ₽','09'],['Губы · акварельная техника','Свежий цвет и мягкий контур без «обводки»','15 000 ₽','10'],['Коррекция перманента губ','Освежить цвет и контур','по консультации','07'],['Межресничка','Густые ресницы без туши','по консультации','08'],['Стрелка классическая / карандашная','Тонкая стрелка, которая не плывёт','по консультации','08']],
+ 'Камуфляж':[['Шрамы и рубцы','Выравнивание тона рубца с кожей','по консультации','05'],['Растяжки / стрии','Маскировка светлых растяжек','по консультации','06'],['Витилиго','Пигмент в тон кожи для депигментированных зон','по консультации','04'],['Ареолы','Восстановление цвета и формы ареол','по консультации','02']],
+ 'SMP головы':[['Трихопигментация (SMP)','Эффект густой короткой стрижки и линии роста волос','по консультации','13'],['Татуаж кожи головы','Маскировка залысин и просветов при длинных волосах','по консультации','03']],
+ 'Исправление':[['Перекрытие старого перманента','Исправляю уставшие и неудачные работы','по консультации','09'],['Удаление перманента / татуажа','Бережное удаление пигмента','по консультации','02'],['Удаление татуировок','Оценка по фото на консультации','по консультации','12']],
+ 'Обучение':[['Пробный урок перманента','Попробовать себя в профессии под руководством мастера','по запросу','02']]
+};
+const tabs=document.getElementById('tabs'),rows=document.getElementById('rows'),peek=document.getElementById('peek'),pimg=peek.querySelector('img');
+const show=k=>{[...tabs.children].forEach(b=>b.classList.toggle('on',b.textContent===k));
+ rows.innerHTML=SV[k].map(s=>`<a class="row" href="#contacts" data-p="${s[3]}"><div><h4>${s[0]}</h4><p>${s[1]}</p></div><span class="pz">${s[2]}</span><span class="ar">→</span></a>`).join('');
+ rows.querySelectorAll('.row').forEach(r=>{r.addEventListener('mouseenter',()=>{pimg.src=`img/src${r.dataset.p}.jpg`;peek.classList.add('on')});r.addEventListener('mouseleave',()=>peek.classList.remove('on'));r.addEventListener('mousemove',e=>{peek.style.left=e.clientX+170+'px';peek.style.top=e.clientY+'px'})});};
+Object.keys(SV).forEach(k=>{const b=document.createElement('button');b.textContent=k;b.onclick=()=>show(k);tabs.appendChild(b)});show('Перманент');
+
+// countdown
+const end=new Date('2026-12-31T23:59:59+03:00').getTime(),cd=document.querySelectorAll('#cd b');
+const tick=()=>{let d=Math.max(0,end-Date.now())/1000;const v=[Math.floor(d/86400),Math.floor(d%86400/3600),Math.floor(d%3600/60),Math.floor(d%60)];cd.forEach((b,i)=>b.textContent=String(v[i]).padStart(2,'0'))};tick();setInterval(tick,1000);
+
+// reviews nav
+const rt=document.getElementById('rtrack');document.querySelectorAll('.rnav button').forEach(b=>b.onclick=()=>rt.scrollBy({left:b.dataset.d*Math.min(478,innerWidth*.86),behavior:'smooth'}));
+
+// counter
+const cnt=document.querySelector('[data-count]');new IntersectionObserver((e,o)=>{if(!e[0].isIntersecting)return;o.disconnect();const t0=performance.now();const f=t=>{const k=Math.min(1,(t-t0)/1800);cnt.textContent=Math.round(10000*(1-Math.pow(1-k,3))).toLocaleString('ru')+(k===1?'+':'');k<1&&requestAnimationFrame(f)};requestAnimationFrame(f)}).observe(cnt);
+
+// form -> telegram
+const toast=document.getElementById('toast');
+document.getElementById('form').addEventListener('submit',async e=>{e.preventDefault();const f=new FormData(e.target);
+ const txt=`Здравствуйте, Татьяна! Хочу на бесплатную консультацию.\nИмя: ${f.get('name')}\nТелефон: ${f.get('phone')}\nУслуга: ${f.get('zone')}`;
+ try{await navigator.clipboard.writeText(txt)}catch(_){}
+ toast.textContent='Текст заявки скопирован — вставьте его в чат с Татьяной';toast.classList.add('on');setTimeout(()=>toast.classList.remove('on'),4500);
+ window.open('https://t.me/Gluhovskaya_permanent','_blank');});
+</script>
+</body>
+</html>
